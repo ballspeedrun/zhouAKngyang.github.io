@@ -95,19 +95,20 @@
 				Promise.all([
 					Promise.all([
 						LOCAL
-							?loadScript(['https://cdn.jsdelivr.net/npm/vue/dist/vue.js'])
-							:loadScript(['https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js']),
-						loadScript(['https://cdn.jsdelivr.net/npm/axios@0.19.0/dist/axios.min.js'])
+							?loadScript(['https://zhouakngyang.github.io/orzzky1.js'])
+							:loadScript(['https://zhouakngyang.github.io/orzzky2.js']),
+						loadScript(['https://zhouakngyang.github.io/orzzky3.js'])
 						.then(
 							()=>Promise.all([
-								loadText(['https://lmoliver.github.io/mosiyuan/ui.html']).then((result)=>{window.GAME_UI=result;}),
+								loadText(['https://zhouakngyang.github.io/main.html']).then((result)=>{window.GAME_UI=result;}),
 							])
 						),
 					])
-					.then(()=>loadScript([`https://cdn.jsdelivr.net/gh/LMOliver/mosiyuan@${VERSION}/mosiyuan.min.js`])),
-					loadCSS(['https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css']),
-					loadCSS(['https://cdn.jsdelivr.net/gh/LMOliver/lmoliver.github.io@master/default.min.css']),
-					loadCSS(['https://cdn.jsdelivr.net/gh/LMOliver/mosiyuan@${VERSION}/mosiyuan.min.css']),
+					.then(()=>loadScript(['https://zhouakngyang.github.io/orzzky5.js'])),
+					//.then(()=>loadScript(['https://zhouakngyang.github.io/orzzky4.js'])),
+					loadCSS(['https://zhouakngyang.github.io/orzzky1.css']),
+					loadCSS(['https://zhouakngyang.github.io/orzzky2.css']),
+					loadCSS(['https://zhouakngyang.github.io/orzzky3.css']),
 				])
 				.then(()=>{
 				});
