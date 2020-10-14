@@ -1,6 +1,6 @@
 ﻿'use strict';
 {
-	const VERSION='0.6.4.2';
+	const VERSION='0.1';
 	const VERSION_NAME='';
 	const VERSION_MESSAGE=`调整了界面，增加了一个新成就。`;
 	const {encode,decode}=(()=>{
@@ -1469,7 +1469,7 @@
 						.style.backgroundColor
 					=`rgba(0,0,0,${1-x})`;
 				},
-				mozhouAKngyang(r=1){
+				zhouAKngyangtxdy(r=1){
 					this.moCount+=r;
 					this.moValue+=r*this.moDelta;
 				},
@@ -2020,7 +2020,7 @@
 				gameTick(s){
 					s*=Math.max(1e-3,this.worldSpeed);
 
-					this.mozhouAKngyang(s*this.bookEffect);
+					this.zhouAKngyangtxdy(s*this.bookEffect);
 				
 					this.theology+=s*this.theologyPerSec;
 					let msc=Math.min(this.magicStone,s*this.magicCostPerSec);
@@ -2425,7 +2425,7 @@
 				},
 			},
 			data:function(){
-				let save=localStorage.getItem('game-mozhouAKngyang-save');
+				let save=localStorage.getItem('game-zhouAKngyangtxdy-save');
 				let data={};
 				if(save){
 					try{
@@ -2455,7 +2455,7 @@
 						for(let resName in SAVE_ITEMS){
 							save[resName]=this[resName];
 						}
-						localStorage.setItem('game-mozhouAKngyang-save',encode.call(this,save));
+						localStorage.setItem('game-zhouAKngyangtxdy-save',encode.call(this,save));
 					}
 					setTimeout(saveSave,20);
 				};
@@ -2477,7 +2477,7 @@
 								return obj;
 							}
 							console.log(
-								`膜拜 %cS%ciyuan%c 要真诚!\n%chttps://orzzhouAKngyang.com/`,
+								`膜拜 %cZ%chouAKngyang%c 要真诚!\n%chttps://zhouAKngyang.github.io/`,
 								`color:black;font-weight:bold;`,
 								`color:red;font-weight:bold;`,
 								'',
